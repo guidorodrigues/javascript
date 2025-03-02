@@ -3,19 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Modelo de Exercicio</title>
+    <title>Verificador de idade</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body onload="carregar()">
     <header>
-      <h1>Hora do Dia</h1>
+      <h1>Verificador de Idade</h1>
     </header>
     <section>
-      <div id="msg">
-        <p>Aqui vai aparecer a menssagem...</p>
+      <div>
+        <p>
+          Ano de Nascimento:
+          <input type="number" name="txtano" id="txtano" />
+        </p>
+
+        <p>
+          Sexo: <!--O name precisar ter o mesmo nome, se não causa erro marcaando mais de uma seleção-->
+          <input type="radio" name="radsex" id="masc"/>
+          <label for="masc">Masculino</label>
+          <input type="radio" name="radsex" id="fem" />
+          <label for="fem">Feminino</label>
+          <input type="radio" name="radsex" id="outro" />
+          <label for="outro">Outros</label>
+        </p>
+        <p>
+          <input type="button" value="verificar" onclick="verificar()"/>
+        </p>
       </div>
-      <div id="foto">
-        <img id="imagem" src="imagens/fotomanha.png" alt="Foto do Dia" />
+      <div id="res">
+        <p>Preencha os dados acima para ver o resultado!</p>
       </div>
     </section>
     <footer>
