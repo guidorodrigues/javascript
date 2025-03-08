@@ -39,7 +39,7 @@ function onclick(){
         window.alert('Adicione os valores antes de finalizar!')
     }else{
         let lot = valores.length
-         res.innerHTML=
+         res.innerHTML
 
 
 
