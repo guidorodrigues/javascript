@@ -1,4 +1,6 @@
 const alunos = ['Luiz', 'Maria', 'João']
+
+
 console.log(alunos)
 
 
@@ -8,6 +10,9 @@ alunos.push('Luiza')
 alunos.push('Fábio')
 
 console.log(alunos.length) // mostra o tamanho da lista de alunos (arrays)
+alunos.unshift('luana') // adiciona no inicio do array, no indice 0 
+
+alunos.pop(); // remove o ultimo indice
 
 alunos[alunos.length] = 'Luiza' // adiciona no final e cria mais um indice
 alunos[alunos.length] = 'Fábio'
@@ -16,8 +21,8 @@ console.log(alunos)
 
 alunos[3] = 'Luana' //altera o indice 3 para Luana, especificamente
 
-//console.log(alunos[0]) // mostra o elemnto do indice
-//console.log(alunos[1])
-//console.log(alunos[2])]
+console.log(alunos[0]) // mostra o elemnto do indice
+console.log(alunos[1])
+console.log(alunos[2])]
 */
 
