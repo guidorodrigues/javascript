@@ -1,7 +1,11 @@
+// indices        0       1        2
 const alunos = ['Luiz', 'Maria', 'João']
 
+alunos.push('Luiza')
+alunos.push('Eduardo')
+alunos.push('Mário')
 
-console.log(alunos)
+console.log(alunos.slice(0, -2))//realiza um fatiamento de elementos po virgulas
 
 
 /*
@@ -12,7 +16,13 @@ alunos.push('Fábio')
 console.log(alunos.length) // mostra o tamanho da lista de alunos (arrays)
 alunos.unshift('luana') // adiciona no inicio do array, no indice 0 
 
-alunos.pop(); // remove o ultimo indice
+alunos.pop(); // remove o ultimo objeto e indice
+const remover = alunos.shift()
+console.log(` Removido: ${remover}`)
+
+delete alunos[1] // deleta o objeto, mas não altera os indices
+ex: [ 'Luiz', <1 empty item>, 'João' ]
+
 
 alunos[alunos.length] = 'Luiza' // adiciona no final e cria mais um indice
 alunos[alunos.length] = 'Fábio'
