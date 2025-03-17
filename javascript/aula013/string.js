@@ -2,7 +2,7 @@
 const umaString = 'Um texto'
 console.log(umaString.toUpperCase()) // deixa a string toda em maiúscula
 console.log(umaString.toLowerCase()) // deixa a string toda em minuscula
-console.log(umaString.slice(-3))
+console.log(umaString.split(''))// pega todas as palavras do seu nome
 
 
 /*
