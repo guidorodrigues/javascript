@@ -1,13 +1,3 @@
-/*
-    O frasco de lodo é um item mágico que pode curar ou causar dano ao usuário.
-    O efeito depende de um dado rolado. Se o resultado for par, o usuário cura 1d8 + 10 pontos de vida. Se o resultado for ímpar, o usuário toma 1d8 + 10 de dano.
-
-    Se o usuário estiver com ferimentos, o frasco de lodo cura 2d8 + 20 pontos de vida. 
-
-    O frasco de lodo só pode ser usado uma vez por dia.
-    Se o usuário não estiver com ferimentos, o frasco de lodo causa 1d8 + 10 de dano. Se o usuário estiver com ferimentos, o frasco de lodo cura 2d8 + 20 pontos de vida.
-*/
-//rolagesn de dados
 function rolarDados(quantidade, faces) {
   let total = 0;
   for (let indice = 0; indice < quantidade; indice++) {
@@ -42,12 +32,14 @@ function usarFrascoDeLodo(ferimentos) {
       quantidade: dano,
       mensagem: "Você usou o frasco de lodo e tomou " + dano + " de dano!",
       frascoUsado: true,
-    };''
+    };
+    ("");
   }
 }
+// 'true' cura (1d6+20) 'false' cura (3d8+10) ou dano (3d8+10)
+// Exemplo de uso
 
 
 const resultado1 = usarFrascoDeLodo(true);
 console.log(resultado1.mensagem);
 console.log("PV:", resultado1.pontosVida);
-
