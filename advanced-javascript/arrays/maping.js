@@ -32,6 +32,16 @@ const pessoasId = pessoas.map(function (obj, indice) {
   obj.id = indice + 1;
   return obj;
 });
+
+const comId = pessoas.map(function (obj, indice) {
+  const newObj = { ...obj };
+  newObj.id = indice + 1;
+  return newObj;
+});
 console.log(nomes);
 console.log(idade);
 console.log(pessoasId);
+console.log(comId);
+
+console.log("----------------------------------");
+console.log(pessoas);
