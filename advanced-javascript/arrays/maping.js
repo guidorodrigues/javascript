@@ -17,7 +17,8 @@ const pessoas = [
   { nome: "Julia", idade: 50 },
 ];
 
-const nomes = nomes.map(function (valor) {
-  return valor.nome;
-});
-console.log(nomes)
+const nomes = pessoas.map((obj) => obj.nome);
+const idade = pessoas.map((obj) => ({ idade: obj.idade}))
+// ou delet obj.nome e returtn obj
+console.log(nomes);
+console.log(idade);
