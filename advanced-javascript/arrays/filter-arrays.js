@@ -20,8 +20,10 @@ const pessoas = [
   { nome: "Lucas", idade: 40 },
   { nome: "Julia", idade: 50 },
 ];
-const pFilter = pessoas.filter(
-  (obj) => obj.nome.length >= 5 && obj.idade >= 50
-);
+const pFilter = pessoas.filter((obj) => obj.nome.length >= 5);
+const iFilter = pessoas.filter((obj) => obj.idade >= 50);
+const aFilter = pessoas.filter((obj) => obj.nome.toLowerCase().endsWith("a")); // termina com a letra 'a' // const aFilter = pessoas.filter((obj) => obj.nome.toLowerCase().includes("a")); // inclui a letra 'a'
 
 console.log(pFilter);
+console.log(iFilter);
+console.log(aFilter);
