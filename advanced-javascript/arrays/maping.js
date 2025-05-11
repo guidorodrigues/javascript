@@ -9,16 +9,29 @@ console.log("----------------------------------");
 // remova apenas a chave 'nome' do objeto
 // adicione uma chave id em cada objeto
 const pessoas = [
-  { nome: "João", idade: 20 },
-  { nome: "Ana", idade: 25 },
-  { nome: "Pedro", idade: 59 },
-  { nome: "Maria", idade: 53 },
-  { nome: "Lucas", idade: 40 },
-  { nome: "Julia", idade: 50 },
+  { nome: "João", nascimento: "2004-01-15" },
+  { nome: "Ana", nascimento: "1999-06-22" },
+  { nome: "Pedro", nascimento: "1965-03-10" },
+  { nome: "Maria", nascimento: "1971-11-05" },
+  { nome: "Lucas", nascimento: "1984-08-19" },
+  { nome: "Julia", nascimento: "1974-02-28" },
+  { nome: "Marcos", nascimento: "1994-07-12" },
+  { nome: "Fernanda", nascimento: "1989-09-30" },
+  { nome: "Roberto", nascimento: "1979-05-17" },
+  { nome: "Patrícia", nascimento: "1969-12-03" },
+  { nome: "Carlos", nascimento: "1964-04-25" },
+  { nome: "Juliana", nascimento: "1996-10-08" },
+  { nome: "Ricardo", nascimento: "1991-03-21" },
+  { nome: "Tatiane", nascimento: "1986-06-14" },
 ];
 
 const nomes = pessoas.map((obj) => obj.nome);
-const idade = pessoas.map((obj) => ({ idade: obj.idade}))
+const idade = pessoas.map((obj) => ({ idade: obj.idade }));
 // ou delet obj.nome e returtn obj
+const pessoasId = pessoas.map(function (obj, indice) {
+  obj.id = indice + 1;
+  return obj;
+});
 console.log(nomes);
 console.log(idade);
+console.log(pessoasId);
