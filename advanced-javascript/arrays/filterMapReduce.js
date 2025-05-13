@@ -11,11 +11,10 @@ console.log("----------------------------------");
 const dobro = numeros.map((valor) => valor * 2);
 console.log(dobro);
 
-console.log('----------------------------------');
+console.log("----------------------------------");
 
 const pares = numeros.filter((valor) => valor % 2 === 0);
 console.log(pares);
-
 
 console.log("----------------------------------");
 
@@ -31,3 +30,13 @@ const pares2 = numeros
   .map((valor) => valor * 2)
   .reduce((acumulador, valor) => acumulador + valor, 0);
 console.log(pares2);
+
+console.log("----------------------------------");
+
+// Versão mais limpa usando encadeamento direto
+const somaDobroPares = numeros
+  .filter((n) => n % 2 === 0)
+  .map((n) => n * 2)
+  .reduce((acc, n) => acc + n, 0);
+
+console.log(somaDobroPares);
