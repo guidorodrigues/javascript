@@ -3,9 +3,31 @@
 // -> dobrar os valores
 // -> reduzir (somar tudo)
 
-const numeros = [5, 50, 80, 1, 2, 3, 4, 5, 40, 200];
-const pares = numeros.filter((valor) => valor % 2 === 0);
-const soma = pares.reduce((acc, valor) => acc + valor * 2, 0);
-console.log(soma);
+const numeros = [5, 50, 2, 4, 40, 200];
+console.log(numeros);
 
 console.log("----------------------------------");
+
+const dobro = numeros.map((valor) => valor * 2);
+console.log(dobro);
+
+console.log('----------------------------------');
+
+const pares = numeros.filter((valor) => valor % 2 === 0);
+console.log(pares);
+
+
+console.log("----------------------------------");
+
+const somar = numeros.reduce((acc, valor) => acc + valor, 0);
+console.log(somar);
+
+console.log("----------------------------------");
+
+// Usando filter, map e reduce juntos
+
+const pares2 = numeros
+  .filter((valor) => valor % 2 === 0)
+  .map((valor) => valor * 2)
+  .reduce((acumulador, valor) => acumulador + valor, 0);
+console.log(pares2);
